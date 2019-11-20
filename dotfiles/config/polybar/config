@@ -152,7 +152,6 @@ click-left = spotctl playpause
 type = custom/script
 interval = 1000
 format = "<label>"
-format-padding = 5
 exec = spotctl info
 exec-if = "pgrep spotify"
 
