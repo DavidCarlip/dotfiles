@@ -24,6 +24,12 @@ dotfiles:
   f_zshrc:
     src: zshrc
     dst: ~/.zshrc
+  f_swmap.sh:
+    src: scripts/swmap.sh
+    dst: ~/scripts/swmap.sh
+  f_brightness.sh:
+    src: scripts/brightness.sh
+    dst: ~/scripts/brightness.sh
 profiles:
   david:
     dotfiles:
@@ -34,3 +40,5 @@ profiles:
     - f_sxhkdrc
     - f_bspwmrc
     - f_zshrc
+    - f_swmap.sh
+    - f_brightness.sh
