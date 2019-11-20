@@ -1,0 +1,36 @@
+config:
+  backup: true
+  create: true
+  dotpath: dotfiles
+dotfiles:
+  f_init.vim:
+    src: config/nvim/init.vim
+    dst: ~/.config/nvim/init.vim
+  f_xinitrc:
+    src: xinitrc
+    dst: ~/.xinitrc
+  f_config:
+    src: config/polybar/config
+    dst: ~/.config/polybar/config
+  f_alacritty.yml:
+    src: config/alacritty/alacritty.yml
+    dst: ~/.config/alacritty/alacritty.yml
+  f_sxhkdrc:
+    src: config/sxhkd/sxhkdrc
+    dst: ~/.config/sxhkd/sxhkdrc
+  f_bspwmrc:
+    src: config/bspwm/bspwmrc
+    dst: ~/.config/bspwm/bspwmrc
+  f_zshrc:
+    src: zshrc
+    dst: ~/.zshrc
+profiles:
+  david:
+    dotfiles:
+    - f_init.vim
+    - f_xinitrc
+    - f_config
+    - f_alacritty.yml
+    - f_sxhkdrc
+    - f_bspwmrc
+    - f_zshrc
