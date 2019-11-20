@@ -1,0 +1,61 @@
+# tmux
+if [ "$TMUX" = "" ]; then tmux; fi
+
+# zplug
+source ~/.zplug/init.zsh
+
+zplug "plugins/git",   from:oh-my-zsh
+
+zplug "zdharma/fast-syntax-highlighting"
+
+zplug "zsh-users/zsh-history-substring-search"
+
+zplug "geometry-zsh/geometry"
+
+
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+
+zplug load
+
+# aliases
+alias v='nvim'
+alias vim='nvim'
+
+alias n='nmcli'
+
+alias a='fasd -a'        # any
+alias s='fasd -si'       # show / search / select
+alias d='fasd -d'        # directory
+alias f='fasd -f'        # file
+alias sd='fasd -sid'     # interactive directory selection
+alias sf='fasd -sif'     # interactive file selection
+alias z='fasd_cd -d'     # cd, same functionality as j in autojump
+alias zz='fasd_cd -d -i' # cd with interactive selection
+
+alias dotdrop='/home/david/dotfiles/dotdrop.sh --cfg=/home/david/dotfiles/config.yaml'
+
+# keybinds
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
+bindkey "^[[1;5D" backward-word
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1~" beginning-of-line
+bindkey "^[[4~" end-of-line
+
+# options
+setopt autocd
+
+# plugin setup
+eval "$(fasd --init auto)"
+eval "$(thefuck --alias)"
+
+# local environment variables
+export EDITOR='nvim'
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
