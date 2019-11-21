@@ -126,7 +126,7 @@ exec-if = "pgrep spotify"
 
 [module/previous]
 type = custom/script
-interval = 10000
+interval = 1
 format = "<label>"
 exec = echo ""
 exec-if = "pgrep spotify"
@@ -134,7 +134,7 @@ click-left = spotctl prev
 
 [module/next]
 type = custom/script
-interval = 10000
+interval = 1
 format = "<label>"
 exec = echo ""
 exec-if = "pidof spotify"
@@ -150,7 +150,7 @@ click-left = spotctl playpause
 
 [module/spotinfo]
 type = custom/script
-interval = 1000
+interval = 1
 format = "<label>"
 exec = spotctl info
 exec-if = "pgrep spotify"
