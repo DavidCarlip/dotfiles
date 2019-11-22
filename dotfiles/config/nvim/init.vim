@@ -91,3 +91,7 @@ nnoremap <leader>p "+p
 nnoremap <leader>P "+P
 vnoremap <leader>p "+p
 vnoremap <leader>P "+P
+
+nnoremap <leader>r :source ~/.config/nvim/init.vim<CR>
+
+command! Q :q
