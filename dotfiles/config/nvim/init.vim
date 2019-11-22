@@ -27,22 +27,67 @@ call plug#end()
 
 call glaive#Install()
 
+set enc=utf-8
+set fenc=utf-8
+set termencoding=utf-8
+
+set nocompatible
+
+syntax enable
+
+set autoindent
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set t_Co=256
+
 if exists('+termguicolors')
   let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
   let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
   set termguicolors
 endif
 
+set background=dark
 colorscheme pencil
 
+set cursorline
 set number
 set mouse=a
+set lazyredraw
+filetype plugin indent on
+
+highlight Comment cterm=italic
+
+set incsearch
+set hlsearch
+set ignorecase
+set smartcase
+set showmatch
+set hidden
 
 let mapleader = ","
 let maplocalleader = "'"
 
 nnoremap ; :
-
-set hidden
 nnoremap <leader>. :bnext<CR>
 nnoremap <leader>, :bprev<CR>
+nnoremap <tab> %
+vnoremap <tab> %
+nnoremap <leader><space> :noh<CR>
+nnoremap j gj
+nnoremap k gk
+nnoremap J 5gj
+nnoremap K 5gk
+nnoremap L g$
+nnoremap H g0
+
+vnoremap  <leader>y  "+y
+nnoremap  <leader>Y  "+yg_
+nnoremap  <leader>y  "+y
+nnoremap  <leader>yy  "+yy
+
+nnoremap <leader>p "+p
+nnoremap <leader>P "+P
+vnoremap <leader>p "+p
+vnoremap <leader>P "+P
