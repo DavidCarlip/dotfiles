@@ -11,6 +11,8 @@ compton --config /home/david/.config/compton/compton.conf &
 
 sxhkd &
 
+xscreensaver-command -exit
+
 xscreensaver &
 
 panel &
