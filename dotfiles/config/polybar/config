@@ -122,7 +122,6 @@ type = custom/script
 interval = 0.1
 format = 
 exec = spotctl status
-exec-if = "pgrep spotify"
 
 [module/previous]
 type = custom/script

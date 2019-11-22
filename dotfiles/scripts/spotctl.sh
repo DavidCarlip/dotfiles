@@ -3,6 +3,7 @@
 if ! pidof spotify > /dev/null
 then
 	echo 'Spotify is not running'
+	polybar-msg hook playpause 1 1> /dev/null
 	exit 1
 fi
 
