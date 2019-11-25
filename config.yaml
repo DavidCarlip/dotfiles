@@ -33,6 +33,9 @@ dotfiles:
   f_spotctl.sh:
     src: scripts/spotctl.sh
     dst: ~/scripts/spotctl.sh
+  f_xscreensaverstopper.sh:
+    src: scripts/xscreensaverstopper.sh
+    dst: ~/scripts/xscreensaverstopper.sh
 profiles:
   david:
     dotfiles:
@@ -46,3 +49,4 @@ profiles:
     - f_swmap.sh
     - f_brightness.sh
     - f_spotctl.sh
+    - f_xscreensaverstopper.sh
