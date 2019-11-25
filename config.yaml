@@ -36,6 +36,9 @@ dotfiles:
   f_xscreensaverstopper.sh:
     src: scripts/xscreensaverstopper.sh
     dst: ~/scripts/xscreensaverstopper.sh
+  f_marx.gif:
+    src: Pictures/backgrounds/marx.gif
+    dst: ~/Pictures/backgrounds/marx.gif
 profiles:
   david:
     dotfiles:
@@ -50,3 +53,4 @@ profiles:
     - f_brightness.sh
     - f_spotctl.sh
     - f_xscreensaverstopper.sh
+    - f_marx.gif
