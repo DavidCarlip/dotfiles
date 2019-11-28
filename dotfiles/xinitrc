@@ -23,6 +23,8 @@ pkill polybar
 
 polybar bar &
 
+brightness 100% &
+
 redshift &
 
 unclutter &
