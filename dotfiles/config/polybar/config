@@ -56,7 +56,7 @@ font-0 = Hack Nerd Font:pixelsize=10;1
 
 modules-left = bspwm
 modules-center = spotupdate previous playpause next spotinfo 
-modules-right = xbacklight pulseaudio wlan battery date
+modules-right = backlight pulseaudio wlan battery date
 
 tray-position =
 tray-padding = 2
@@ -154,24 +154,16 @@ format = "<label>"
 exec = spotctl info
 exec-if = "pgrep spotify"
 
-[module/xbacklight]
-type = internal/xbacklight
+[module/backlight]
+type = internal/backlight
+
+card = intel_backlight
 
 format = <ramp> <label>
 label = %percentage%%
 
-ramp-0 = 
-
-bar-width = 10
-bar-indicator = |
-bar-indicator-foreground = #fff
-bar-indicator-font = 2
-bar-fill = ─
-bar-fill-font = 2
-bar-fill-foreground = #9f78e1
-bar-empty = ─
-bar-empty-font = 2
-bar-empty-foreground = ${colors.foreground-alt}
+ramp-0 = 
+ramp-1 = ﯦ
 
 [module/wlan]
 type = internal/network

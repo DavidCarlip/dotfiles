@@ -27,9 +27,6 @@ dotfiles:
   f_swmap.sh:
     src: scripts/swmap.sh
     dst: ~/scripts/swmap.sh
-  f_brightness.sh:
-    src: scripts/brightness.sh
-    dst: ~/scripts/brightness.sh
   f_spotctl.sh:
     src: scripts/spotctl.sh
     dst: ~/scripts/spotctl.sh
@@ -50,7 +47,6 @@ profiles:
     - f_bspwmrc
     - f_zshrc
     - f_swmap.sh
-    - f_brightness.sh
     - f_spotctl.sh
     - f_xscreensaverstopper.sh
     - f_marx.gif

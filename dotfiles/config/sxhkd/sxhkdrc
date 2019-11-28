@@ -70,10 +70,10 @@ XF86AudioMute
   pulseaudio-ctl mute
 
 XF86MonBrightnessUp
-  brightness +10
+  light -A 10
 
 XF86MonBrightnessDown
-  brightness -10
+  light -U 10
 
 #
 # state/flags
