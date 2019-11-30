@@ -36,6 +36,12 @@ dotfiles:
   f_marx.gif:
     src: Pictures/backgrounds/marx.gif
     dst: ~/Pictures/backgrounds/marx.gif
+  f_rc.glsl:
+    src: config/glava/rc.glsl
+    dst: ~/.config/glava/rc.glsl
+  f_circle.glsl:
+    src: config/glava/circle.glsl
+    dst: ~/.config/glava/circle.glsl
 profiles:
   david:
     dotfiles:
@@ -50,3 +56,5 @@ profiles:
     - f_spotctl.sh
     - f_xscreensaverstopper.sh
     - f_marx.gif
+    - f_rc.glsl
+    - f_circle.glsl
