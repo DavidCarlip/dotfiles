@@ -29,6 +29,8 @@ redshift &
 
 unclutter &
 
+glava-desktop &
+
 udiskie --tray &
 
 userresources=$HOME/.Xresources

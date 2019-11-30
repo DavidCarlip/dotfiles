@@ -42,6 +42,12 @@ dotfiles:
   f_circle.glsl:
     src: config/glava/circle.glsl
     dst: ~/.config/glava/circle.glsl
+  f_desktop.glsl:
+    src: config/glava/desktop.glsl
+    dst: ~/.config/glava/desktop.glsl
+  f_radial.glsl:
+    src: config/glava/radial.glsl
+    dst: ~/.config/glava/radial.glsl
 profiles:
   david:
     dotfiles:
@@ -58,3 +64,5 @@ profiles:
     - f_marx.gif
     - f_rc.glsl
     - f_circle.glsl
+    - f_desktop.glsl
+    - f_radial.glsl
