@@ -1,6 +1,3 @@
-# tmux
-if [ "$TMUX" = "" ]; then tmux; fi
-
 # zplug
 source ~/.zplug/init.zsh
 
