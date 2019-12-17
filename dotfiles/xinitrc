@@ -3,7 +3,7 @@ setxkbmap -option caps:swapescape
 setxkbmap -option compose:prsc
 setxkbmap -layout dvorak
 
-xinput set-prop 11 285 -237 -237
+xinput set-prop 12 311 1
 
 feh --bg-scale ~/Pictures/backgrounds/marx.gif
 
