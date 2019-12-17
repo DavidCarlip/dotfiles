@@ -18,8 +18,8 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #ff000000
-background-alt = #00000000
+background = #dd000000
+background-alt = #aa000000
 ;foreground = ${xrdb:color7:#222}
 foreground = #AAAAAA
 foreground-alt = #666666
@@ -31,7 +31,7 @@ alert = #bd2c40
 [bar/bar]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 27
+height = 30
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
@@ -52,7 +52,7 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = Hack Nerd Font:pixelsize=10;1
+font-0 = Hack Nerd Font:pixelsize=12;1
 
 modules-left = bspwm
 modules-center = spotupdate previous playpause next spotinfo 
@@ -85,11 +85,12 @@ type = internal/bspwm
 
 label-focused = %index%
 label-focused-foreground = ${colors.foreground}
+label-focused-background = ${colors.background-alt}
 label-focused-underline= ${colors.primary}
 label-focused-padding = 2
 
 label-occupied = %index%
-label-occupied-foreground = ${colors.foreground-alt}
+label-occupied-foreground = ${colors.foreground}
 label-occupied-padding = 2
 
 label-urgent = %index%!
