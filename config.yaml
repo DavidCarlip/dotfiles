@@ -66,3 +66,20 @@ profiles:
     - f_circle.glsl
     - f_desktop.glsl
     - f_radial.glsl
+  molamola:
+    dotfiles:
+    - f_init.vim
+    - f_xinitrc
+    - f_config
+    - f_alacritty.yml
+    - f_sxhkdrc
+    - f_bspwmrc
+    - f_zshrc
+    - f_swmap.sh
+    - f_spotctl.sh
+    - f_xscreensaverstopper.sh
+    - f_marx.gif
+    - f_rc.glsl
+    - f_circle.glsl
+    - f_desktop.glsl
+    - f_radial.glsl
