@@ -33,6 +33,8 @@ set termencoding=utf-8
 
 set nocompatible
 
+set clipboard=unnamed
+
 syntax enable
 
 set autoindent
