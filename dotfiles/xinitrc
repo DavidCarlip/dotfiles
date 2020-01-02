@@ -7,7 +7,7 @@ xinput set-prop 12 311 1
 
 feh --bg-scale ~/Pictures/backgrounds/marx.gif
 
-compton --config /home/david/.config/compton/compton.conf &
+compton -b
 
 sxhkd &
 
