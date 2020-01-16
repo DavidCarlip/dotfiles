@@ -48,6 +48,9 @@ dotfiles:
   f_radial.glsl:
     src: config/glava/radial.glsl
     dst: ~/.config/glava/radial.glsl
+  f_config.rasi:
+    src: config/rofi/config.rasi
+    dst: ~/.config/rofi/config.rasi
 profiles:
   david:
     dotfiles:
@@ -83,3 +86,4 @@ profiles:
     - f_circle.glsl
     - f_desktop.glsl
     - f_radial.glsl
+    - f_config.rasi

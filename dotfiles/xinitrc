@@ -33,6 +33,10 @@ glava-desktop &
 
 udiskie --tray &
 
+caffeine &
+
+wmname LG3D
+
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
 sysresources=/etc/X11/xinit/.Xresources
