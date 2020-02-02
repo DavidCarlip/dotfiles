@@ -1,14 +1,17 @@
 # zplug
 source ~/.zplug/init.zsh
 
-zplug "plugins/git",   from:oh-my-zsh
-
 zplug "zdharma/fast-syntax-highlighting"
 
 zplug "zsh-users/zsh-history-substring-search"
 
 zplug "geometry-zsh/geometry"
 
+zplug "plugins/colored-man-pages",      from:oh-my-zsh
+
+zplug "plugins/git",   from:oh-my-zsh
+
+zplug "plugins/archlinux",      from:oh-my-zsh
 
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
