@@ -51,6 +51,9 @@ dotfiles:
   f_config.rasi:
     src: config/rofi/config.rasi
     dst: ~/.config/rofi/config.rasi
+  f_xcompose:
+    src: XCompose
+    dst: ~/.XCompose
 profiles:
   david:
     dotfiles:
@@ -87,3 +90,4 @@ profiles:
     - f_desktop.glsl
     - f_radial.glsl
     - f_config.rasi
+    - f_xcompose
