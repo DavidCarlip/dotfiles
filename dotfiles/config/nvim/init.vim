@@ -9,6 +9,7 @@ Plug 'xolox/vim-misc'
 Plug 'xolox/vim-notes'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'lervag/vimtex'
+Plug 'mhinz/neovim-remote'
 Plug 'baskerville/vim-sxhkdrc'
 Plug 'reedes/vim-wordy'
 Plug 'reedes/vim-textobj-sentence'
@@ -70,6 +71,8 @@ set hidden
 
 let mapleader = ","
 let maplocalleader = "'"
+
+let g:vimtex_compiler_progname = 'nvr'
 
 nnoremap ; :
 nnoremap <leader>. :bnext<CR>
