@@ -3,7 +3,7 @@ setxkbmap -option caps:swapescape
 setxkbmap -option compose:prsc
 setxkbmap -layout dvorak
 
-xinput set-prop 12 311 1
+xinput set-prop 12 314 1
 
 feh --bg-scale ~/Pictures/backgrounds/marx.gif
 
@@ -29,11 +29,13 @@ redshift &
 
 unclutter &
 
-glava-desktop &
+glava --entry=desktop.glsl &
 
 udiskie --tray &
 
 caffeine &
+
+udiskie &
 
 wmname LG3D
 

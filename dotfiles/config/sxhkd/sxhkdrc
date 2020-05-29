@@ -38,6 +38,14 @@ ctrl + space
 super + v
   glava
 
+# desktop audio visualizer
+super + shift + v
+  glava --entry=desktop.glsl
+
+# screenshot
+super + shift + s
+    scrot ~/screenshots/%Y-%m-%d-%T-screenshot.png
+
 #
 # bspwm hotkeys
 #
@@ -61,6 +69,10 @@ super + y
 # swap the current node and the biggest node
 super + g
   bspc node -s biggest
+
+# rotate parent node 90 degrees
+super + {shift,_} r
+    bspc node @parent -R {-90,90}
 
 #
 # media
@@ -87,11 +99,23 @@ XF86AudioPause
 XF86AudioPlay
   spotctl playpause
 
+ctrl + End
+  spotctl playpause
+
 XF86AudioNext
+  spotctl next
+
+ctrl + Insert
   spotctl next
 
 XF86AudioPrev
   spotctl prev
+
+ctrl + Home
+  spotctl prev
+
+XF86AudioMicMute
+  pulseaudio-ctl mute-input
 
 #
 # state/flags
@@ -136,8 +160,8 @@ super + {o,i}
   bspc wm -h on
 
 # focus or send to the given desktop
-super + {_,shift + }{1-9,0}
-  bspc {desktop -f,node -d} '^{1-9,10}'
+super + {_,shift + }{_,ctrl + }{1-9,0}
+  bspc {desktop -f,node -d} '^{_,1}{1-9,10}'
 
 #
 # preselect

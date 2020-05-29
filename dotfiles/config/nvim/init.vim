@@ -3,7 +3,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'lilydjwg/colorizer'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
-Plug 'Yggdroot/indentLine'
 Plug 'ap/vim-buftabline'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-notes'
@@ -61,6 +60,7 @@ set lazyredraw
 filetype plugin indent on
 
 highlight Comment cterm=italic
+highlight Conceal guifg='CornflowerBlue'
 
 set incsearch
 set hlsearch
@@ -73,6 +73,9 @@ let mapleader = ","
 let maplocalleader = "'"
 
 let g:vimtex_compiler_progname = 'nvr'
+let g:tex_conceal = 'admg'
+
+let g:notes_directories = ['~/notes']
 
 nnoremap ; :
 nnoremap <leader>. :bnext<CR>
@@ -96,6 +99,8 @@ nnoremap <leader>p "+p
 nnoremap <leader>P "+P
 vnoremap <leader>p "+p
 vnoremap <leader>P "+P
+
+nnoremap <leader>c :set <C-R>=&conceallevel ? 'conceallevel=0' : 'conceallevel=2'<CR><CR>
 
 nnoremap <leader>r :source ~/.config/nvim/init.vim<CR>
 

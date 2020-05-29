@@ -43,6 +43,8 @@ alias dotdrop='/home/david/dotfiles/dotdrop.sh --cfg=/home/david/dotfiles/config
 
 alias glava-desktop='glava --entry=desktop.glsl'
 
+alias python3.6='python3'
+
 # keybinds
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
@@ -61,6 +63,8 @@ eval "$(thefuck --alias)"
 
 # local environment variables
 export EDITOR='nvim'
+export GEOMETRY_RPROMPT=(git \(virtualenv\))
+export GEOMETRY_PROMPT_PLUGINS=()
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
