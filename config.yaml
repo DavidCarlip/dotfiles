@@ -54,6 +54,9 @@ dotfiles:
   f_xcompose:
     src: XCompose
     dst: ~/.XCompose
+  f_fullscreen-float.sh:
+    src: scripts/fullscreen-float.sh
+    dst: ~/scripts/fullscreen-float.sh
 profiles:
   david:
     dotfiles:
@@ -91,3 +94,23 @@ profiles:
     - f_radial.glsl
     - f_config.rasi
     - f_xcompose
+  ammonite:
+    dotfiles:
+    - f_init.vim
+    - f_xinitrc
+    - f_config
+    - f_alacritty.yml
+    - f_sxhkdrc
+    - f_bspwmrc
+    - f_zshrc
+    - f_swmap.sh
+    - f_spotctl.sh
+    - f_xscreensaverstopper.sh
+    - f_marx.gif
+    - f_rc.glsl
+    - f_circle.glsl
+    - f_desktop.glsl
+    - f_radial.glsl
+    - f_config.rasi
+    - f_xcompose
+    - f_fullscreen-float.sh

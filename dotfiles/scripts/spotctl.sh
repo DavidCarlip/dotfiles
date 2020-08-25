@@ -11,6 +11,7 @@ metadata=$(dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mp
 
 song_name=$(echo "$metadata" | grep -i -A 1 "title" | grep "variant" | cut -d'"' -f 2)
 artist_name=$(echo "$metadata" | grep -i -A 2 ":artist" | tail -n+3 | cut -d'"' -f 2)
+podcast_name=$(echo "$metadata" | grep -i -A 2 ":album" | grep "variant" | head -1 | cut -d'"' -f 2)
 playerstatus=$(dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.freedesktop.DBus.Properties.Get string:'org.mpris.MediaPlayer2.Player' string:'PlaybackStatus' | tail -n+2 | cut -d'"' -f 2)
 
 if [[ $1 == "next" ]]
@@ -31,9 +32,10 @@ then
 	else
 		polybar-msg hook playpause 3 1> /dev/null
 	fi
-elif [[ $1 == "info" ]]
+elif [[ $1 == "info" ]] && [[ "$(echo "$metadata" | grep "episode" | wc -l)" == "0" ]]
 then
 	echo "$artist_name": "$song_name"
+else
+    	echo "$podcast_name": "$song_name"
 fi
-
 

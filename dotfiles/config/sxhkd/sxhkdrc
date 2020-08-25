@@ -44,7 +44,7 @@ super + shift + v
 
 # screenshot
 super + shift + s
-    scrot ~/screenshots/%Y-%m-%d-%T-screenshot.png
+  sleep 0.2 ; scrot -s -e 'feh $f' ~/screenshots/%Y-%m-%d-%T-screenshot.png
 
 #
 # bspwm hotkeys
@@ -74,18 +74,22 @@ super + g
 super + {shift,_} r
     bspc node @parent -R {-90,90}
 
+# toggle polybar
+super + shift + f
+    fullscreen-float
+
 #
 # media
 #
 
 XF86AudioRaiseVolume
-  pulseaudio-ctl up 5
+  pamixer -i 5
 
 XF86AudioLowerVolume
-  pulseaudio-ctl down 5
+  pamixer -d 5
 
 XF86AudioMute
-  pulseaudio-ctl mute
+  pamixer --toggle-mute
 
 XF86MonBrightnessUp
   light -A 10
@@ -115,7 +119,7 @@ ctrl + Home
   spotctl prev
 
 XF86AudioMicMute
-  pulseaudio-ctl mute-input
+  pamixer --default-source --toggle-mute
 
 #
 # state/flags
@@ -198,4 +202,8 @@ super + alt + shift + {d,h,t,n}
 # move a floating window
 super + {Left,Down,Up,Right}
   bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# short move a floating window
+super + shift + {Left,Down,Up,Right}
+    bspc node -v {-1 0,0 1,0 -1,1 0}
 

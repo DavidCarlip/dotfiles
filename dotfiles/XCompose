@@ -755,6 +755,7 @@
 <Multi_key> <U> <quotedbl> 		: "Ü"   Udiaeresis # LATIN CAPITAL LETTER U WITH DIAERESIS
 <Multi_key> <diaeresis> <U> 		: "Ü"   Udiaeresis # LATIN CAPITAL LETTER U WITH DIAERESIS
 <Multi_key> <U> <diaeresis> 		: "Ü"   Udiaeresis # LATIN CAPITAL LETTER U WITH DIAERESIS
+<Multi_key> <W> <Y>                 : "Ƿ"   Wynn # LATIN CAPITAL LETTER WYNN
 <dead_acute> <Y>                 	: "Ý"   Yacute # LATIN CAPITAL LETTER Y WITH ACUTE
 <Multi_key> <acute> <Y>          	: "Ý"   Yacute # LATIN CAPITAL LETTER Y WITH ACUTE
 <Multi_key> <Y> <acute> 		: "Ý"   Yacute # LATIN CAPITAL LETTER Y WITH ACUTE
@@ -881,6 +882,7 @@
 <Multi_key> <u> <quotedbl> 		: "ü"   udiaeresis # LATIN SMALL LETTER U WITH DIAERESIS
 <Multi_key> <diaeresis> <u> 		: "ü"   udiaeresis # LATIN SMALL LETTER U WITH DIAERESIS
 <Multi_key> <u> <diaeresis> 		: "ü"   udiaeresis # LATIN SMALL LETTER U WITH DIAERESIS
+<Multi_key> <w> <y>                 : "ƿ"   wynn # LATIN LETTER WYNN
 <dead_acute> <y>                 	: "ý"   yacute # LATIN SMALL LETTER Y WITH ACUTE
 <Multi_key> <acute> <y>          	: "ý"   yacute # LATIN SMALL LETTER Y WITH ACUTE
 <Multi_key> <y> <acute> 		: "ý"   yacute # LATIN SMALL LETTER Y WITH ACUTE

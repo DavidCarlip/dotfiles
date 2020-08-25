@@ -74,6 +74,7 @@ let maplocalleader = "'"
 
 let g:vimtex_compiler_progname = 'nvr'
 let g:tex_conceal = 'admg'
+let g:vimtex_view_general_viewer = 'firefox'
 
 let g:notes_directories = ['~/notes']
 
