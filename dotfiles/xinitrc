@@ -8,7 +8,7 @@ xinput set-prop 12 321 .3
 
 feh --bg-scale ~/Pictures/backgrounds/marx.gif
 
-compton -b
+picom -b
 
 sxhkd &
 
