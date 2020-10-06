@@ -9,7 +9,7 @@ fi
 
 metadata=$(dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.freedesktop.DBus.Properties.Get string:'org.mpris.MediaPlayer2.Player' string:'Metadata')
 
-song_name=$(echo "$metadata" | grep -i -A 1 "title" | grep "variant" | cut -d'"' -f 2)
+song_name=$(echo "$metadata" | grep -i -A 1 "title" | grep "variant" | cut -d'\n' -f 2- | rev | cut -c 2- | rev)
 artist_name=$(echo "$metadata" | grep -i -A 2 ":artist" | tail -n+3 | cut -d'"' -f 2)
 podcast_name=$(echo "$metadata" | grep -i -A 2 ":album" | grep "variant" | head -1 | cut -d'"' -f 2)
 playerstatus=$(dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.freedesktop.DBus.Properties.Get string:'org.mpris.MediaPlayer2.Player' string:'PlaybackStatus' | tail -n+2 | cut -d'"' -f 2)

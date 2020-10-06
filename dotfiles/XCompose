@@ -57,6 +57,31 @@
 # Hebrew characters
 <Multi_key> <h> <A>                 : "ℵ"
 <Multi_key> <h> <B>                 : "ℶ"
+<Multi_key> <h> <G>                 : "ג"
+<Multi_key> <h> <D>                 : "ד"
+<Multi_key> <h> <H>                 : "ה"
+<Multi_key> <h> <W>                 : "ו"
+<Multi_key> <h> <Z>                 : "ז"
+<Multi_key> <h> <X>                 : "ח"
+<Multi_key> <h> <T>                 : "ט"
+<Multi_key> <h> <Y>                 : "י"
+<Multi_key> <h> <K>                 : "כ"
+<Multi_key> <h> <k>                 : "ך"
+<Multi_key> <h> <L>                 : "ל"
+<Multi_key> <h> <M>                 : "מ"
+<Multi_key> <h> <m>                 : "ם"
+<Multi_key> <h> <N>                 : "נ"
+<Multi_key> <h> <n>                 : "ן"
+<Multi_key> <h> <S>                 : "ס"
+<Multi_key> <h> <O>                 : "ע"
+<Multi_key> <h> <P>                 : "פ"
+<Multi_key> <h> <p>                 : "ף"
+<Multi_key> <h> <T>                 : "ת"
+<Multi_key> <h> <T> <S>             : "צ"
+<Multi_key> <h> <t> <s>             : "ץ"
+<Multi_key> <h> <Q>                 : "ק"
+<Multi_key> <h> <R>                 : "ר"
+<Multi_key> <h> <S>                 : "ש"
 
 # Custom math
 <Multi_key> <i> <n> <t>             : "∫"
@@ -68,8 +93,8 @@
 <Multi_key> <f> <a>                 : "∀"
 <Multi_key> <t> <e>                 : "∃"
 <Multi_key> <C> <minus>             : "∈"
-<Multi_key> <i> <n>                 : "∈"
-<Multi_key> <exclam> <i> <n>        : "∉"
+<Multi_key> <i> <i>                 : "∈"
+<Multi_key> <exclam> <i> <i>        : "∉"
 <Multi_key> <exclam> <C> <minus>    : "∉"
 <Multi_key> <s> <t>                 : "∋"
 <Multi_key> <n> <i>                 : "∋"
@@ -80,6 +105,20 @@
 <Multi_key> <c> <u> <p>             : "∪"
 <Multi_key> <c> <a> <p>             : "∩"
 <Multi_key> <n> <a>                 : "∇"
+<Multi_key> <s> <u> <b>             : "⊂"
+<Multi_key> <s> <u> <p>             : "⊃"
+<Multi_key> <parenleft> <parenright>: "○"
+<Multi_key> <comma> <period>        : "⋅"
+
+# Custom logic
+<Multi_key> <slash> <backslash>     : "∧"
+<Multi_key> <backslash> <slash>     : "∨"
+<Multi_key> <bar> <equal>           : "⊨"
+<Multi_key> <bar> <minus>           : "⊢"
+<Multi_key> <slash> <bar> <equal>   : "⊭"
+<Multi_key> <slash> <bar> <minus>   : "⊬"
+<Multi_key> <i> <f> <f>             : "↔"
+
 
 # Script letters
 <Multi_key> <S> <B>                 : "𝔹"
@@ -161,18 +200,12 @@
 <Multi_key> <space> <comma>      	: "¸"   cedilla # CEDILLA
 <Multi_key> <comma> <comma> 		: "¸"   cedilla # CEDILLA
 
-<Multi_key> <parenleft> <minus>  	: "{"   braceleft # LEFT CURLY BRACKET
-<Multi_key> <minus> <parenleft>  	: "{"   braceleft # LEFT CURLY BRACKET
-
 <Multi_key> <slash> <asciicircum> 	: "|"   bar # VERTICAL LINE
 <Multi_key> <asciicircum> <slash> 	: "|"   bar # VERTICAL LINE
 <Multi_key> <V> <L>              	: "|"   bar # VERTICAL LINE
 <Multi_key> <L> <V>              	: "|"   bar # VERTICAL LINE
 <Multi_key> <v> <l>              	: "|"   bar # VERTICAL LINE
 <Multi_key> <l> <v>              	: "|"   bar # VERTICAL LINE
-
-<Multi_key> <parenright> <minus> 	: "}"   braceright # RIGHT CURLY BRACKET
-<Multi_key> <minus> <parenright> 	: "}"   braceright # RIGHT CURLY BRACKET
 
 <Multi_key> <asciitilde> <space> 	: "~"   asciitilde # TILDE
 <Multi_key> <space> <asciitilde> 	: "~"   asciitilde # TILDE
@@ -4622,10 +4655,17 @@
 <Multi_key> <less> <minus> 	: "←" U2190 # LEFTWARDS ARROW
 <Multi_key> <minus> <greater> 	: "→" U2192 # RIGHTWARDS ARROW
 <Multi_key> <equal> <greater> 	: "⇒" U21D2 # RIGHTWARDS DOUBLE ARROW
+<Multi_key> <less> <equal>      : "⇐" U21D0 # LEFTWARDS DOUBLE ARROW
 <Multi_key> <U2203> <U0338> 	: "∄"   U2204 # THERE DOES NOT EXIST
 <Multi_key> <braceleft> <braceright>	: "∅"   U2205 # EMPTY SET
+<Multi_key> <parenleft> <minus> : "∈"   U2208 # ELEMENT OF
+<Multi_key> <minus> <parenleft> : "∈"   U2208 # ELEMENT OF
+<Multi_key> <parenright> <minus>    : "∋"   U220B # CONTAINS AS A MEMBER
+<Multi_key> <minus> <parenright>    : "∋"   U220B # CONTAINS AS AN ELEMENT
 <Multi_key> <U2208> <U0338> 	: "∉"   U2209 # NOT AN ELEMENT OF
 <Multi_key> <U220B> <U0338> 	: "∌"   U220C # DOES NOT CONTAIN AS MEMBER
+<Multi_key> <slash> <parenleft> <minus> 	: "∉"   U2209 # NOT AN ELEMENT OF
+<Multi_key> <slash> <parenright> <minus> 	: "∌"   U220C # DOES NOT CONTAIN AS MEMBER
 <Multi_key> <U2223> <U0338> 	: "∤"   U2224 # DOES NOT DIVIDE
 <Multi_key> <U2225> <U0338> 	: "∦"   U2226 # NOT PARALLEL TO
 <Multi_key> <U223C> <U0338> 	: "≁"   U2241 # NOT TILDE
@@ -4656,8 +4696,16 @@
 <Multi_key> <leftshoe> <U0338> 	: "⊄"   U2284 # NOT A SUBSET OF
 <Multi_key> <includes> <U0338> 	: "⊅"   U2285 # NOT A SUPERSET OF
 <Multi_key> <rightshoe> <U0338> 	: "⊅"   U2285 # NOT A SUPERSET OF
+<Multi_key> <parenleft> <slash> 	: "⊄"   U2284 # NOT A SUBSET OF
+<Multi_key> <slash> <parenleft> 	: "⊄"   U2284 # NOT A SUBSET OF
+<Multi_key> <parenright> <slash> 	: "⊅"   U2285 # NOT A SUPERSET OF
+<Multi_key> <slash> <parenright> 	: "⊅"   U2285 # NOT A SUPERSET OF
 <Multi_key> <U2286> <U0338> 	: "⊈"   U2288 # NEITHER A SUBSET OF NOR EQUAL TO
 <Multi_key> <U2287> <U0338> 	: "⊉"   U2289 # NEITHER A SUPERSET OF NOR EQUAL TO
+<Multi_key> <slash> <parenleft> <underscore>    : "⊈"   U2289 # NEITHER A SUBSET OF NOR EQUAL TO
+<Multi_key> <slash> <parenright> <underscore> 	: "⊉"   U2289 # NEITHER A SUPERSET OF NOR EQUAL TO
+<Multi_key> <slash> <underscore> <parenleft>    : "⊈"   U2289 # NEITHER A SUBSET OF NOR EQUAL TO
+<Multi_key> <slash> <underscore> <parenright> 	: "⊉"   U2289 # NEITHER A SUPERSET OF NOR EQUAL TO
 <Multi_key> <righttack> <U0338> 	: "⊬"   U22AC # DOES NOT PROVE
 <Multi_key> <U22A8> <U0338> 	: "⊭"   U22AD # NOT TRUE
 <Multi_key> <U22A9> <U0338> 	: "⊮"   U22AE # DOES NOT FORCE
@@ -5947,6 +5995,10 @@
 <Multi_key> <U2282> <underscore>                : "⊆"   U2286   # ⊂ _ SUBSET OF OR EQUAL TO
 <Multi_key> <underscore> <U2283>                : "⊇"   U2287   # _ ⊃ SUPERSET OF OR EQUAL TO
 <Multi_key> <U2283> <underscore>                : "⊇"   U2287   # ⊃ _ SUPERSET OF OR EQUAL TO
+<Multi_key> <underscore> <parenleft>                : "⊆"   U2286   # _ ⊂ SUBSET OF OR EQUAL TO
+<Multi_key> <parenleft> <underscore>                : "⊆"   U2286   # ⊂ _ SUBSET OF OR EQUAL TO
+<Multi_key> <underscore> <parenright>                : "⊇"   U2287   # _ ⊃ SUPERSET OF OR EQUAL TO
+<Multi_key> <parenright> <underscore>                : "⊇"   U2287   # ⊃ _ SUPERSET OF OR EQUAL TO
 <Multi_key> <U25cb> <minus>                     : "⊖"   U2296   # ○ - CIRCLED MINUS
 <Multi_key> <minus> <U25cb>                     : "⊖"   U2296   # - ○ CIRCLED MINUS
 <Multi_key> <U25cb> <period>                    : "⊙"   U2299   # ○ - CIRCLED DOT
