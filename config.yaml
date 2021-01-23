@@ -84,6 +84,9 @@ dotfiles:
     src: config/spicetify
     dst: ~/.config/spicetify
     chmod: '700'
+  f_background_lighthouse.jpg:
+    src: Pictures/backgrounds/background_lighthouse.jpg
+    dst: ~/Pictures/backgrounds/background_lighthouse.jpg
 profiles:
   david:
     dotfiles:
@@ -148,3 +151,4 @@ profiles:
     - d_extracted
     - d_themes
     - d_spicetify
+    - f_background_lighthouse.jpg
