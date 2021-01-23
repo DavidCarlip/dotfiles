@@ -3,10 +3,10 @@ setxkbmap -option caps:swapescape
 setxkbmap -option compose:prsc
 setxkbmap -layout dvorak
 
-xinput set-prop 12 311 1
-xinput set-prop 12 321 .3
+xinput set-prop 12 321 1
+xinput set-prop 12 332 .3
 
-feh --bg-scale ~/Pictures/backgrounds/marx.gif
+feh --bg-scale ~/Pictures/backgrounds/background_lighthouse.jpg
 
 picom -b
 
@@ -17,8 +17,6 @@ xscreensaver-command -exit
 xscreensaver &
 
 xscreensaverstopper &
-
-panel &
 
 pkill polybar
 
@@ -32,11 +30,7 @@ unclutter &
 
 glava --entry=desktop.glsl &
 
-udiskie --tray &
-
 caffeine &
-
-udiskie &
 
 wmname LG3D
 

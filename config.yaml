@@ -57,6 +57,33 @@ dotfiles:
   f_fullscreen-float.sh:
     src: scripts/fullscreen-float.sh
     dst: ~/scripts/fullscreen-float.sh
+  f_config.ini:
+    src: config/spicetify/config.ini
+    dst: ~/.config/spicetify/config.ini
+  d_backup:
+    src: config/spicetify/Backup
+    dst: ~/.config/spicetify/Backup
+    chmod: '700'
+  d_customapps:
+    src: config/spicetify/CustomApps
+    dst: ~/.config/spicetify/CustomApps
+    chmod: '700'
+  d_extensions:
+    src: config/spicetify/Extensions
+    dst: ~/.config/spicetify/Extensions
+    chmod: '700'
+  d_extracted:
+    src: config/spicetify/Extracted
+    dst: ~/.config/spicetify/Extracted
+    chmod: '700'
+  d_themes:
+    src: config/spicetify/Themes
+    dst: ~/.config/spicetify/Themes
+    chmod: '700'
+  d_spicetify:
+    src: config/spicetify
+    dst: ~/.config/spicetify
+    chmod: '700'
 profiles:
   david:
     dotfiles:
@@ -114,3 +141,10 @@ profiles:
     - f_config.rasi
     - f_xcompose
     - f_fullscreen-float.sh
+    - f_config.ini
+    - d_backup
+    - d_customapps
+    - d_extensions
+    - d_extracted
+    - d_themes
+    - d_spicetify

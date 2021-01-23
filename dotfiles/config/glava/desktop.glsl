@@ -47,7 +47,7 @@
 #request settitle "GLava"
 
 /* Window geometry (x, y, width, height) */
-#request setgeometry 0 0 800 800
+#request setgeometry 0 0 1000 1000
 
 /* Window background color (RGB format).
    Does not work with `setopacity "xroot"` */
@@ -105,7 +105,7 @@
    
    When the "fifo" backend is set, "auto" is interpreted as
    "/tmp/mpd.fifo". Otherwise, a valid path should be provided. */
-#request setsource 36
+#request setsource 9
 
 /* Buffer swap interval (vsync), set to '0' to prevent
    waiting for refresh, '1' (or more) to wait for the specified

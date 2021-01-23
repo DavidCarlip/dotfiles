@@ -1,4 +1,4 @@
-==========================================================
+;==========================================================
 ;
 ;
 ;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
@@ -18,12 +18,12 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #dd000000
-background-alt = #aa000000
+background = #ff2e3440
+background-alt = #aa434c5e
 ;foreground = ${xrdb:color7:#222}
-foreground = #AAAAAA
-foreground-alt = #666666
-foreground-third = #555555
+foreground = #d8dee9
+foreground-alt = #a5abb6
+foreground-third = #777777
 primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
@@ -185,7 +185,7 @@ ramp-signal-foreground = ${colors.foreground-alt}
 
 [module/eth-main]
 type = internal/network
-interface = enp0s31f6
+interface = eth0
 interval = 0.1
 
 format-connected-underline = #55aa55

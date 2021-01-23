@@ -5,13 +5,16 @@ zplug "zdharma/fast-syntax-highlighting"
 
 zplug "zsh-users/zsh-history-substring-search"
 
+zplug "zsh-users/zsh-autosuggestions"
+
 zplug "geometry-zsh/geometry"
 
 zplug "plugins/colored-man-pages",      from:oh-my-zsh
 
-zplug "plugins/git",   from:oh-my-zsh
+zplug "plugins/git",                    from:oh-my-zsh
 
-zplug "plugins/archlinux",      from:oh-my-zsh
+zplug "plugins/archlinux",              from:oh-my-zsh
+
 
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
@@ -45,6 +48,8 @@ alias glava-desktop='glava --entry=desktop.glsl'
 
 alias python3.6='python3'
 
+alias hades='wine /home/david/.local/share/Steam/steamapps/common/Hades/x64/Hades.exe'
+
 # keybinds
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
@@ -65,6 +70,17 @@ eval "$(thefuck --alias)"
 export EDITOR='nvim'
 export GEOMETRY_RPROMPT=(git \(virtualenv\))
 export GEOMETRY_PROMPT_PLUGINS=()
+
+# highlighting
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#4B4B4B"
+
+# history
+HISTFILE=$HOME/.zhistory       # enable history saving on shell exit
+setopt APPEND_HISTORY          # append rather than overwrite history file.
+HISTSIZE=1200                  # lines of history to maintain memory
+SAVEHIST=1000                  # lines of history to maintain in history file.
+setopt HIST_EXPIRE_DUPS_FIRST  # allow dups, but expire old ones when I hit HISTSIZE
+setopt EXTENDED_HISTORY        # save timestamp and runtime information
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
