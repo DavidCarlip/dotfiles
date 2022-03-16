@@ -57,7 +57,6 @@ endif
 set background=dark
 colorscheme nord
 
-set cursorline
 set number
 set mouse=a
 set lazyredraw

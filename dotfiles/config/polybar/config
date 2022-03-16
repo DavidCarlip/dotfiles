@@ -56,7 +56,7 @@ font-0 = Hack Nerd Font:pixelsize=17;1
 
 modules-left = bspwm
 modules-center = spotupdate previous playpause next spotinfo 
-modules-right = backlight pulseaudio wlan eth-main eth-phone battery date
+modules-right =  backlight pulseaudio cpu wlan eth-main eth-phone battery date
 
 tray-position =
 tray-padding = 2
@@ -279,6 +279,22 @@ animation-charging-foreground = ${colors.foreground-alt}
 animation-charging-framerate = 750
 
 label-discharging = %percentage%%
+
+[module/cpu]
+type = internal/cpu
+
+interval = 0.5
+format = <label> <ramp-coreload>
+label =  %percentage%%
+ramp-coreload-spacing = 1
+ramp-coreload-0 = ▁
+ramp-coreload-1 = ▂
+ramp-coreload-2 = ▃
+ramp-coreload-3 = ▄
+ramp-coreload-4 = ▅
+ramp-coreload-5 = ▆
+ramp-coreload-6 = ▇
+ramp-coreload-7 = █
 
 [settings]
 screenchange-reload = true

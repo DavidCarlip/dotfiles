@@ -22,7 +22,7 @@ pkill polybar
 
 polybar bar &
 
-brightness 100%
+light -S 70
 
 redshift &
 
