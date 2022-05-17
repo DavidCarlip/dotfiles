@@ -60,6 +60,9 @@ dotfiles:
   f_background_lighthouse.jpg:
     src: Pictures/backgrounds/background_lighthouse.jpg
     dst: ~/Pictures/backgrounds/background_lighthouse.jpg
+  d_snippets:
+    src: vim/plugged/vim-snippets/snippets
+    dst: ~/.vim/plugged/vim-snippets/snippets
 profiles:
   david:
     dotfiles:
@@ -118,3 +121,4 @@ profiles:
     - f_xcompose
     - f_fullscreen-float.sh
     - f_background_lighthouse.jpg
+    - d_snippets
