@@ -63,6 +63,9 @@ dotfiles:
   d_snippets:
     src: vim/plugged/vim-snippets/snippets
     dst: ~/.vim/plugged/vim-snippets/snippets
+  d_vim-snippets:
+    src: vim/plugged/vim-snippets
+    dst: ~/.vim/plugged/vim-snippets
 profiles:
   david:
     dotfiles:
@@ -122,3 +125,4 @@ profiles:
     - f_fullscreen-float.sh
     - f_background_lighthouse.jpg
     - d_snippets
+    - d_vim-snippets
