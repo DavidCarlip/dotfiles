@@ -126,3 +126,26 @@ profiles:
     - f_background_lighthouse.jpg
     - d_snippets
     - d_vim-snippets
+  coelacanth:
+    dotfiles:
+    - f_init.vim
+    - f_xinitrc
+    - f_config
+    - f_alacritty.yml
+    - f_sxhkdrc
+    - f_bspwmrc
+    - f_zshrc
+    - f_swmap.sh
+    - f_spotctl.sh
+    - f_xscreensaverstopper.sh
+    - f_marx.gif
+    - f_rc.glsl
+    - f_circle.glsl
+    - f_desktop.glsl
+    - f_radial.glsl
+    - f_config.rasi
+    - f_xcompose
+    - f_fullscreen-float.sh
+    - f_background_lighthouse.jpg
+    - d_snippets
+    - d_vim-snippets
